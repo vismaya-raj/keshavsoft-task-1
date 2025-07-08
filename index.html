@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CreativeUI | Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <style>
+    .gradient-hero 
+    {
+    background: linear-gradient(to right, #4211f1, #f3f0e9); /* Example gradient */
+    border-radius: 25px;
+    margin: 2rem;
+    }
+
+    .feature-gradient 
+    {
+    background: linear-gradient(to right, #5a061b, #bd95b7);
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+    }
+
+  .feature-card 
+  {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+  }
+
+  .feature-card:hover 
+  {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+
+  .icon-box 
+  {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .icon-components { color: #FFD700; }     /* gold */
+  .icon-design { color: #00FFFF; }         /* aqua */
+  .icon-code { color: #00FF00; }           /* lime green */
+  .icon-responsive { color: #FF69B4; }  
+
+footer.gradient-footer {
+      background: linear-gradient(135deg, #baeef0 0%, #66c9e2 100%);
+      color: white;
+      padding: 2rem 0;
+      animation: fadeIn 1.2s ease-in;
+    }
+footer.gradient-footer p {
+      margin-bottom: 0;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+    .footer-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+    .footer-icons a:hover {
+      color: #ffd700;
+    }
+@keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fade-in">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">KeshavSoft</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+<section class="text-center p-5 gradient-hero fade-in rounded-4 mx-3">
+  <div class="container">
+    <h1 class="display-4 animate-slide">Fast Loading,Websites!</h1>
+    <p class="lead animate-slide-delay">KeshavSoft is a modern software development company focused on building scalable, reliable, and user-centric digital solutions.</p>
+    <a href="about.html" class="btn btn-primary animate-fadeup">Learn More</a>
+  </div>
+</section>
+
+
+  <!-- Features -->
+  <section class="feature-gradient">
+  <div class="container">
+    <h2 class="mb-5">Our Key Features</h2>
+    <div class="row text-center g-4">
+      <div class="col-md-3">
+        <div class="card feature-card p-4">
+          <i data-feather="grid" class="icon-box icon-components"></i>
+          <h5 class="card-title">Components</h5>
+          <p class="card-text">Choose the best design system for your next product.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card feature-card p-4">
+          <i data-feather="edit-3" class="icon-box icon-design"></i>
+          <h5 class="card-title">Design</h5>
+          <p class="card-text">Get the latest design ideas and turn it into reality.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card feature-card p-4">
+          <i data-feather="code" class="icon-box icon-code"></i>
+          <h5 class="card-title">Less Code</h5>
+          <p class="card-text">Make your code easier to maintain using variables.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card feature-card p-4">
+          <i data-feather="monitor" class="icon-box icon-responsive"></i>
+          <h5 class="card-title">Fully Responsive</h5>
+          <p class="card-text">This design system is fully supported on any device.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+ <footer class="gradient-footer text-center">
+    <div class="container">
+      <div class="footer-icons mb-3">
+        <a href="#" aria-label="Facebook"><i data-feather="facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i data-feather="twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+        <a href="#" aria-label="Instagram"><i data-feather="instagram"></i></a>
+      </div>
+      <p>© 2025 KeshavSoft. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>feather.replace()</script>
+</body>
+</html>
